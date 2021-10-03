@@ -1,0 +1,167 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.banner{
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.56), rgba(0,0,0,0.85)),url(pic/pexels-pixabay-257736.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.navbar{
+    width:85%;
+    margin: auto;
+    padding: 135px 0;
+    font-size: 25px;
+    letter-spacing: 1px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 10em;
+    cursor: pointer;
+  
+}
+
+#izzo{
+    width:350px;
+    float: right;
+    padding: 125px;
+    border-radius: 30%;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.navbar ul li::after{
+    content:"";
+    height: 3px;
+    width: 0;
+    background: #ffc107;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.title{
+    font-size: 40px;
+    line-height: 100px;
+    font-weight: bold;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: sans-serif;
+}
+
+
+
+#story{
+    color: white;
+    background-color: rgba(255, 255, 240, 0.198);
+    border-radius: 20px;
+    margin:30px;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    
+}
+
+
+
+
+footer{
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    left: 35%;
+}
+
+
+#footer1{
+position: relative;
+}
+
+
+
+
+
+@media (max-width:700px){
+
+
+    .banner{
+        background-size: cover;
+        height: auto;
+    }
+
+    nav ul{
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navbar{
+        width:25%;
+        margin: 0;
+        padding: 15px;
+        font-size: 10px;
+    }
+    #izzo{
+        display: none;
+
+    }
+
+    footer{
+        display: none;
+    }
+}
