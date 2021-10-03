@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #f8bd7f;
+}
+
+
+#text{
+    text-align: center;
+    color: #00416d;
+    padding: 25px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 55px;
+    position: absolute;
+    top: 50px;
+    left: 40%;
+   
+}
+
+#logo{
+    width:200px;
+    position: absolute;
+    top:0px;
+    
+}
+
+#memorypic{
+    width:350px;
+    /*height: 450px;*/
+    border: 10px solid purple;
+    position: fixed;
+    top: 220px;
+    right: 50px;
+
+}
+
+#sec1{
+    width: 350px;
+    height: 450px;
+    border: 10px solid pink;
+    top: 100px;
+    left: 50px;
+    position: fixed;
+}
+/*
+#sec2{
+    width:350px;
+    height: 450px;
+    border: 10px solid purple;
+    position: fixed;
+    top: 100px;
+    right: 50px;
+}
+*/
+#lefta{
+    width:150px;
+    position: absolute;
+    left: 485px;
+    top: 185px;
+}
+#righta{
+    width:150px;
+    position: absolute;
+    left: 685px;
+    top: 355px;
+}
